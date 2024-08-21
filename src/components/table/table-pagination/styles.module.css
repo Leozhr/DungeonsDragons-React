@@ -1,0 +1,15 @@
+.table-pagination {
+  width: 100%;
+  padding: 1rem 0rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-foreground);
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-pagination span {
+  font-weight: 600;
+}

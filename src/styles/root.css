@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+
+:root {
+  /* COLORS */
+  --color-background: #F0EDE4;
+  --color-foreground: #DFDCD3;
+  --color-hover: #e7e4da;
+  --color-red: #EA3535;
+  --color-red-darkest: #501F1F;
+  --color-red-foreground: #F16565;
+  --color-border: #484443;
+  --color-text: #1E1E1E;
+  --color-text-placeholder: #7D7975;
+  --color-white: #FAFAFA;
+  --color-scrollbar: #a19f97;
+
+  /* FONTS */
+  --font-koh-santepheap: 'Koh Santepheap', cursive, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+  border-left: 0.06rem solid var(--color-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border: 0.06rem solid var(--color-border);
+}

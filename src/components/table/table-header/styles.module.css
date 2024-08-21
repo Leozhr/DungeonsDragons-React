@@ -1,0 +1,36 @@
+.table-nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: var(--color-foreground);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3.125rem;
+  border-bottom: 0.06rem solid var(--color-border);
+}
+
+.table-nav-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-nav-filter {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.active {
+  color: var(--color-red);
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .table-nav {
+    padding: 1.3rem 1rem;
+  }
+
+  .table-nav-filter {
+    display: none;
+  }
+}

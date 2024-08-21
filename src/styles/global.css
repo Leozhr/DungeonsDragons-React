@@ -1,0 +1,87 @@
+@import url('./root.css');
+
+/* DEFAULT STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-koh-santepheap);
+  background-color: var(--color-foreground);
+  color: var(--color-text);
+}
+
+input {
+  border: none;
+  background: none;
+  width: 100%;
+  color: var(--color-text);
+  font-size: 1.3rem;
+  transform: translateY(0.06rem);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--color-text-placeholder);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* DEFAULT ICON */
+.icon {
+  cursor: pointer;
+  width: 2rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon.active {
+  color: var(--color-red);
+}
+
+/* CONTAINER RESPONSIVE */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,93 @@
+.main {
+  min-height: 60rem;
+}
+
+.hero {
+  height: 20rem;
+  background: var(--color-red);
+  border-bottom: 0.06rem solid var(--color-border);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  overflow: hidden;
+  padding-top: 2.8rem;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-info span {
+  color: var(--color-red-darkest);
+  font-weight: 600;
+}
+
+.hero-rarity span {
+  color: var(--color-red-darkest);
+  font-weight: 600;
+}
+
+.hero-description h2, .hero-variants h2 {
+  color: var(--color-red-darkest);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.hero-description-content {
+  border: 0.06rem solid var(--color-border);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  padding: 2rem 1rem;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.hero-card-variants {
+  background: var(--color-background);
+  border: 0.06rem solid var(--color-border);
+  padding: 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-hover);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .hero-rarity {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    height: 20rem;
+    padding-top: 4rem;
+  }
+
+  .hero-content, .hero-rarity {
+    font-size: 1.3rem;
+  }
+
+  .hero-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

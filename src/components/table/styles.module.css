@@ -1,0 +1,13 @@
+.table {
+  width: 100%;
+  background: var(--color-background);
+  border: 0.06rem solid var(--color-border);
+  transform: translateY(-8rem);
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1200px) {
+  .table {
+    padding: 0 !important;
+  } 
+}
